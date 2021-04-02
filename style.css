@@ -71,10 +71,36 @@
 }
 .card .card-content{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
 }
 
  .card-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 20px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-info h2{
+    font-size: 54px;
+    font-weight: bold;
+    color: #ffba33;
+    /* margin-right: 40px; */
+}
+
+.card-info p{
+    font-size: 16px;
+}
+
+.card-line{
+    border-right: 1px solid #1111;
 }
