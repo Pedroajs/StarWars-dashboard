@@ -52,4 +52,29 @@
 .content{
     width: 100%;
     background-color: #f5f6fa;
+ 
+}
+
+.card{
+    width: 240px;
+    height: 132px;
+    margin: 0 20px;
+    background-color: #ffff;
+    box-shadow:  4px 4px 15px rgba(0,0,0,0.25);
+    border-radius: 15px;
+}
+.card-small{
+    width: 240px;
+}
+.card-large{
+    width: 464px;
+}
+.card .card-content{
+    display: flex;
+}
+
+ .card-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
