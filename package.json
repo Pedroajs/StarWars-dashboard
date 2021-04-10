@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Pedroajs/StarWars-dashboard/issues"
   },
-  "homepage": "https://github.com/Pedroajs/StarWars-dashboard#readme"
+  "homepage": "https://github.com/Pedroajs/StarWars-dashboard#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
