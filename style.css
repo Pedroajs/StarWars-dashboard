@@ -9,6 +9,7 @@
 }
 .container{
     display: flex;
+    background-color: lightgray;
 }
 
 .lateral-menu{
@@ -103,4 +104,14 @@
 
 .card-line{
     border-right: 1px solid #1111;
+}
+
+.tabela{
+    width: 642px;
+    /* height: 438px; */
+    padding: 30px;    
+
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
 }

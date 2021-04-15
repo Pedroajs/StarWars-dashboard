@@ -3,7 +3,7 @@ const personagens = document.getElementById("personagens");
 const luas = document.getElementById("luas");
 const planetas = document.getElementById("planetas");
 const naves = document.getElementById("naves");
-
+const tabelaFilmes = document.getElementById("filmsTable")
 preencherInfos();
 
 function preencherInfos(){  
@@ -19,6 +19,39 @@ function preencherInfos(){
     })
 }
 
+async function preencerTabelas(){
+    const response = await swapiGet("films/")
+    const tableData = response.results;
+    console.log(tableData)
+    tableData.forEach(film => {
+      $("#filmsTable").append(
+            `
+                <tr>
+                    <td>
+                        ${film.title}
+                    </td>
+                
+                    <td>
+                        ${film.release_date}
+                    </td>
+                
+                    <td>
+                        ${film.director}
+                    </td>
+                
+                    <td>
+                        ${film.episode_id}
+                    </td>
+                </tr>
+            `
+        )
+    });
+
+}
+
+preencerTabelas();
+
+
 function swapiGet(params){
     const url = `https://swapi.dev/api/${params}`;
     return axios.get(url)
@@ -26,8 +59,6 @@ function swapiGet(params){
             
                 return response.data;
             })
-            
-
 }
 
 
