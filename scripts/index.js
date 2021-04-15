@@ -32,7 +32,7 @@ async function preencerTabelas(){
                     </td>
                 
                     <td>
-                        ${film.release_date}
+                        ${moment(film.release_date).format("DD/MM/YYYY")}
                     </td>
                 
                     <td>
