@@ -52,7 +52,7 @@ async function preencerTabelas(){
 preencerTabelas();
 
 
-function swapiGet(params){
+export function swapiGet(params){
     const url = `https://swapi.dev/api/${params}`;
     return axios.get(url)
             .then(response =>{
